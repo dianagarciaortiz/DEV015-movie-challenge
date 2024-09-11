@@ -1,0 +1,22 @@
+{
+  "name": "moviechallengue",
+  "version": "1.0.0",
+  "description": "pagina web con filtrado de peliculas ",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "serve src/ -s"
+  },
+  "keywords": [
+    "movie",
+    "peliculas"
+  ],
+  "author": "Diana García <L>",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/plugin-transform-modules-commonjs": "^7.24.8",
+    "node-fetch": "^2.7.0",
+    "serve": "^14.2.3"
+  }
+}

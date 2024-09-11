@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #141414;
+    color: white;
+  }
+
+
+  
+
+  #movieList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  /* Cada artículo de película */
+  #movieList li {
+    list-style: none;
+    margin: 10px;
+    flex-basis: 200px;
+    text-align: center;
+  }
+  
+  #movieList li img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  #movieList li img:hover {
+    transform: scale(1.05);
+  }
+  
+  #movieList li h2 {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  #movieList li p {
+    font-size: 14px;
+    color: #a9a9a9;
+  }
+  
+  /* Modal */
+  #modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .modal-content img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .modal-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .modal-content p {
+    font-size: 16px;
+    color: #b5b5b5;
+  }
+  
+  /* Botón de cerrar el modal */
+  #modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  #modal-close:hover {
+    color: red;
+  }
+  
+  .search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #141414;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el input de búsqueda */
+#searchInput {
+    width: 50%;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #222;
+    color: white;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+#searchInput::placeholder {
+    color: #555;
+}
+
+#searchInput:focus {
+    border-color: #b81d24;
+    outline: none;
+}
+
+/* Estilos para el select de género */
+#genreSelect {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #222;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#genreSelect:focus {
+    border-color: #b81d24;
+    outline: none;
+}
+
+/* Añadiendo un icono de búsqueda (opcional) */
+#searchInput {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/49/49116.png');
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    padding-left: 40px;  /* Espacio para el icono */
+}
+
+
+/* ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 16px;
+}
+
+li{
+    border: 1px solid black;
+    padding: 16px;
+}
+
+img{
+    border-radius: 8px;
+    width: 100%;
+
+}
+
+#modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+} */
+
+/* estilos al modal
+
+/*listener a cada una de las tarhetas que al hacer click haga un modal(dialog)
+tener que hacer otro fetch al endpont de movie id 
