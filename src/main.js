@@ -1,5 +1,5 @@
 // main.js
-import { fetchData } from './api/API.js';
+import { fetchData } from './api/api.js';
 import { renderMovies } from './components/app.js';
 
 // Inicializar el proceso
