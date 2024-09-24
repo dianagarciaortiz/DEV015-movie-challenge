@@ -7,7 +7,7 @@
 //       expect(typeof fetchdata).toBe('function');
 //     });
 //   });
-import { fetchData } from "../api/api.js";
+import { fetchData } from "../api.js";
 
 // Mockeamos la función global fetch
 global.fetch = jest.fn(() =>
@@ -46,7 +46,7 @@ describe('fetchData', () => {
 });
 
 
-  import { renderMovies } from "../components/app.js";
+  import { renderMovies } from "../app.js";
 
   describe('renderMovies', () => {
     beforeEach(() => {

@@ -1,6 +1,6 @@
 // main.js
-import { fetchData } from './api/api.js';
-import { renderMovies } from './components/app.js';
+import { fetchData } from './api.js';
+import { renderMovies } from './app.js';
 
 // Inicializar el proceso
 async function init() {

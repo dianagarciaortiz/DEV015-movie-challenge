@@ -5,7 +5,8 @@
   "main": "src/index.html",
   "scripts": {
     "test": "jest --verbose --coverage test/",
-    "start": "serve src/ -s"
+    "start": "serve src/ -s",
+    "vercel": "vercel"
   },
   "keywords": [
     "movie",
